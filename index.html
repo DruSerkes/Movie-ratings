@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Movies Ratings!</title>
+</head>
+<body>
+    <header>
+        <h1>My Movie Ratings!</h1>
+        <p>Add and rate your favorite movies!</p>
+    </header>
+
+    <!-- Movie form  -->
+    <form id='movie-form'>
+
+        <input type='text' name='movie' id='movie' placeholder="Movie Title" minlength="2">
+        <input type='number' name='rating' id='rating' placeholder="Rating" min='0' max='10' step='.5'>
+        <input type='submit'>
+
+    </form>
+
+    <!-- sort selection -->
+    <section id='sort'>
+        <h3>Sort By:</h3>
+        <input type="radio" name='movie' id='movie'>
+        <label for='movie'>Movie</label>
+        <br>
+        <input type='radio' name='movie' id='rating'>
+        <label for='rating'>Rating</label>
+    </section>
+    <!-- end sort section  -->
+
+    <!-- Ratings container -->
+    <section id='container'>
+    </section>
+
+    <!-- Add jQuery and local script for greater good!!! -->
+    <script src="https://code.jquery.com/jquery-3.5.0.min.js" integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ=" crossorigin="anonymous"></script>
+    <script src='./app.js'></script>
+</body>
+</html>
